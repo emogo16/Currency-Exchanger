@@ -9,10 +9,10 @@
 <body>
   <div class="container">
     <h1> Currency Exchanger</h1>
-    <label for="caculate">Amount</label>
+    <label for="calculate">Amount in US dollars</label>
     <input id="calculate" type="text">
   
-    <p>Convert </p><select class="form-control" id="dropDown">
+    <p>Convert to..</p><select class="form-control" id="dropDown">
       <br>
       <option value="mex">Mexican Peso</option>
       <option value="eur">Euro</option>
@@ -20,10 +20,12 @@
       <option value="swe">Swedish Krona</option>
       <option value="pou">Pound sterling</option> 
     </select>
+    
     <br>
+    <label for="totalAmount"></label>
     <button class="btn" id="math">Get Exchange</button>
     <div class="calculatedMath"></div>
-    <div class="Errors"></div>
+    <div class="errors"></div>
   </div>
 </body>
 </html>
