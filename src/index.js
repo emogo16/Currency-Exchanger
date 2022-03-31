@@ -17,13 +17,11 @@ $(document).ready(function() {
   $('#math').click(function() {
     let start = $('#calculate').val();
     let option = $('#dropDown').val();
-    let total = $('#totalAmount').val();
     clearFields();
-    let promise = CurrencyExchanger.calculateExchange(start, option, total);
+    let promise = CurrencyExchanger.calculateExchange(start, option);
     promise.then(function(response) {
       const body=JSON.parse(response);
-      console.log(body);
-      $('.calculateMath').text(`Your total of ${toatl} in ${start} is equal to ${body.conversion_result} in ${option} copnverts to ${body.conversion_rate}.`);
+      $('.calculatedMath').text(`${start}USD is equal to ${body.conversion_result} in ${option}.`);
     }, function(error) {
       $('.errors').text(`There is an error with your input....${error}`)
     });
