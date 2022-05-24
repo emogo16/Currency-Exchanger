@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Exchanger</title>
+</head>
+<body>
+  <div class="container">
+    <h1> Currency Exchanger</h1>
+    <label for="calculate">Amount in US dollars</label>
+    <input id="calculate" type="text">
+  
+    <p>Convert to..</p><select class="form-control" id="dropDown">
+      <br>
+      <option value="mxn">Mexican Peso</option>
+      <option value="eur">Euro</option>
+      <option value="cop">Colombian Peso</option>
+      <option value="sek">Swedish Krona</option>
+      <option value="gbp">Pound sterling</option> 
+    </select>
+    
+    <br>
+    <label for="totalAmount"></label>
+    <button class="btn" id="math">Get Exchange</button>
+    <div class="calculatedMath"></div>
+    <div class="errors"></div>
+  </div>
+</body>
+</html>
